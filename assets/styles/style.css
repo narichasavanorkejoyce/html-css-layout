@@ -1,7 +1,7 @@
 div{
   height: 100px;
   border: 1px solid #000;
-  margin-bottom: 10px;
+  margin: 10px;
   text-align: center;
   width: 30%;
 }
@@ -11,7 +11,15 @@ p {
 }
 
 .half {
+  float: left;
+  text-align: center;
+}
+
+.half:nth-child(3) { /*pseudo-selector*/
+  clear: left;
 }
 
 .full{
+  clear: both;
+  background-color: #6495ED;
 }
